@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="appointment.css">
+    <script src="appointment.js" defer></script>
+    <title>Book Appointment</title>
+</head>
+<header>
+    <div class="logo-container">
+        <img src="Naval Dental Clinic Logo.png" alt="Naval Dental Clinic Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+
+        </ul>
+    </nav>
+    <a href="appointment.html" class="appointment-btn">BOOK APPOINTMENT</a>
+</header>   
+<body>
+    <div class="form-instructions">
+        <h2>INSTRUCTIONS</h2>
+        <p>
+            Please fill out all required fields accurately.
+            Use this form to request a dental appointment;
+            a clinic representative will contact you via email or phone to confirm the date and time.
+        </p>
+    </div>
+    <div class="basic-info-form-container">
+    <div class="form-header">
+        BASIC INFORMATION DETAILS
+    </div>
+    <form class="basic-info-form">
+        <div class="form-row form-name-gender">
+            <input type="text" id="fullName" placeholder="FULL NAME">
+            <div class="radio-group" id="genders">
+                <input type="radio" id="male" name="gender">
+                <label for="male">MALE</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">FEMALE</label>
+            </div>
+        </div>
+        
+        <div class="form-row">
+            <input type="text" id="address" placeholder="STREET ADDRESS" required>
+        </div>
+
+        <div class="form-row">
+            <input type="text" id="city" placeholder="CITY (ex. Quezon City)" required>
+        </div>
+        
+        <div class="form-row">
+            <input type="text" id="province" placeholder="PROVINCE (ex. Metro Manila)" required>
+        </div>
+        
+        <div class="form-row form-half-width">
+            <input type="text" id="zip" placeholder="ZIP CODE" required>
+            <input type="tel" id="phone" placeholder="PHONE NUMBER (09...)" required>
+        </div>
+        
+        <div class="form-row">
+            <input type="email" id="email" placeholder="EMAIL ADDRESS" required>
+        </div>
+    </form>
+</div>
+<div class="appointment-info-form-container">
+    <div class="form-header">
+        APPOINTMENT INFORMATION DETAILS
+    </div>
+    <form class="appointment-info-form">
+
+        <div class="form-row form-date-time">
+            <div class="input-icon-group">
+                <input type="date" id="date" placeholder="APPOINTMENT DATE" required>
+                </div>
+            <div class="input-icon-group">
+                <input type="time" id="time" placeholder="APPOINTMENT TIME" required>
+                </div>
+        </div>
+        
+        <div class="reason-section" id="reason">
+            <p class="reason-heading">REASON FOR APPOINTMENT (CHECK ALL THAT APPLY)</p>
+            
+            <div class="checkbox-grid-wrapper">
+                
+                <div class="checkbox-grid">
+                    <div class="checkbox-column">
+                        <label><input type="checkbox" name="reason"> Dental Check-Up</label>
+                        <label><input type="checkbox" name="reason"> Tooth Extraction / Oral Surgery</label>
+                        <label><input type="checkbox" name="reason"> Tooth Restoration</label>
+                        <label><input type="checkbox" name="reason"> Oral Prophylaxis / Periodontics</label>
+                    </div>
+
+                    <div class="checkbox-column">
+                        <label><input type="checkbox" name="reason"> Orthodontic Treatment</label>
+                        <label><input type="checkbox" name="reason"> Prosthodontics</label>
+                        <label><input type="checkbox" name="reason"> Orthodontic Treatment</label>
+                        <label><input type="checkbox" name="reason"> Aesthetic & Cosmetic Dentistry</label>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="notes-section">
+            <p class="notes-heading">ADDITIONAL NOTES</p>
+            <textarea class="notes-input" placeholder="If reason is not found in options, please write it here."></textarea>
+        </div>
+    </form>
+</div>
+<div class="confirmation-modal">
+    <div class="modal-content-box">
+    <button id="submit" class="submit-confirm-btn">SUBMIT FORM</button>
+   <div id="termsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Terms and Conditions</h2>
+    <p><strong>Data Privacy Act:</strong> All personal information collected in this form will be kept confidential and used solely for appointment scheduling and clinic communication purposes. Your data will not be shared with unauthorized third parties.</p>
+    <p><strong>Reschedule Procedures:</strong> If you need to reschedule your appointment, please notify the clinic at least 24 hours in advance. Failure to do so may result in delays or limited availability for future appointments.</p>
+    <p><strong>Appointment Confirmation: </strong> Confirmation will be sent via Email.</p>
+    <div style="text-align:center; margin-top:20px;">
+      <button id="acceptTerms">I Agree</button>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<footer>
+    <div class="footer-logo">
+        <img src="Naval Dental Clinic Logo Trans.png" alt="Naval Dental Clinic Logo">
+    </div>
+    
+    <div class="footer-content">
+        <a href="https://www.facebook.com/xavier.naval.5" target="_blank" class="facebook-link">
+            <img src="Facebook.png" alt="Facebook Icon">
+        </a>
+        
+        <p class="copyright">2ITA Group 3 © 2025</p>
+        <p class="project-note">This Website Was Made As Our Final Project For Web-Front End</p>
+    </div>
+</footer>
+<script src="appointment.js"></script>
+</html>
